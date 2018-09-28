@@ -25,12 +25,12 @@ public class DataRecord implements Serializable {
     private LocalDateTime created;
 
 
-    @PostPersist
+    @PrePersist
     public void postCreate() {
         this.created = LocalDateTime.now();
     }
 
-    @PostUpdate
+    @PreUpdate
     public void postUpdate() {
         this.updated = LocalDateTime.now();
     }

@@ -64,7 +64,7 @@ public class DataRecordService {
                 updatedRecords.add(dataRecord);
             }
         }
-        return updatedRecords.get(0);
+        return dataRecords.get(0);
     }
 
 }
